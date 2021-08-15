@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/ba"
+    android:id="@+id/drawerlayout"
+    tools:openDrawer="start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/genre"
+            android:layout_width="138dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="44dp"
+            android:text="@string/genre"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="138dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="88dp"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+        android:id="@+id/add"
+        android:layout_width="67dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/circle_button"
+        android:text="@string/add"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/fic"
+            android:layout_width="110dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="72dp"
+            android:foregroundTint="#009688"
+            android:keepScreenOn="false"
+            android:src="@drawable/f"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.623"
+            app:layout_constraintStart_toEndOf="@+id/thrill"
+            app:layout_constraintTop_toBottomOf="@+id/genre" />
+
+        <ImageButton
+            android:id="@+id/rom"
+            android:layout_width="110dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="96dp"
+            android:src="@drawable/r"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.219"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thrill" />
+
+        <ImageButton
+            android:id="@+id/sci"
+            android:layout_width="110dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/s"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.623"
+            app:layout_constraintStart_toEndOf="@+id/rom"
+            app:layout_constraintTop_toBottomOf="@+id/fic" />
+
+
+        <ImageButton
+            android:id="@+id/thrill"
+            android:layout_width="110dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="76dp"
+            android:backgroundTint="#009688"
+            android:contentDescription="thriller"
+            android:cropToPadding="false"
+            android:src="@drawable/t"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.219"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genre" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="411dp"
+            android:layout_height="52dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation"
+        app:menu="@menu/items"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header">
+
+        <TextView
+            android:id="@+id/so"
+            android:textColor="@color/grey"
+            android:layout_width="120sp"
+            android:layout_height="30sp"
+            android:layout_marginTop="124sp"
+            android:textSize="18sp"
+            android:text="" />
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id = "@+id/profile"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_account_circle_black_24dp">
+    </item>
+    <item
+        android:id = "@+id/books"
+        android:title="@string/books"
+        android:icon="@drawable/ic_library_books_black_24dp">
+    </item>
+    <item
+        android:id="@+id/about"
+        android:title="@string/about"
+        android:icon="@drawable/ic_error_black_24dp">
+    </item>
+    <item
+        android:id="@+id/contact_us"
+        android:title="@string/Contact"
+        android:icon="@drawable/ic_email_black_24dp">
+    </item>
+    <item
+        android:id="@+id/Search"
+        android:title="@string/search"
+        android:icon="@drawable/ic_search_black_24dp">
+    </item>
+    <item
+        android:id="@+id/logout"
+        android:title="@string/logout"
+        android:icon="@drawable/ic_keyboard_return_black_24dp">
+    </item>
+</menu>

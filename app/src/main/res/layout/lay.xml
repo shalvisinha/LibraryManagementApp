@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="240dp"
+        android:text="@string/n"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/author" />
+
+    <Button
+        android:id="@+id/addto"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="286dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/circle_button"
+        android:text="@string/add"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>
